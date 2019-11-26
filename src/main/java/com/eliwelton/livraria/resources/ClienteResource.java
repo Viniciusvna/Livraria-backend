@@ -38,6 +38,7 @@ public class ClienteResource {
 		return clienteRepository.findAll();
 	}
 	
+	
 	@GetMapping("/cliente/{id}")
 	@ApiOperation(value="Retorna um cliente unico")
 	public Cliente listaClienteUnico(@PathVariable(value="id") long id){
